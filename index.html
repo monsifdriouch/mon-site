@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STIKO | عالم الإبداع</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #090914;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 8%;
+      border-bottom: 1px solid #25213b;
+    }
+
+    .logo {
+      color: #a78bfa;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin: 0 12px;
+    }
+
+    nav a:hover {
+      color: #a78bfa;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 60px 8%;
+    }
+
+    .content {
+      max-width: 520px;
+    }
+
+    .tag {
+      color: #c4b5fd;
+      background: #21183a;
+      padding: 10px 16px;
+      border-radius: 30px;
+      display: inline-block;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 5vw, 65px);
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+
+    h1 span {
+      color: #a78bfa;
+    }
+
+    p {
+      color: #aaa8bd;
+      line-height: 1.9;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #8b5cf6;
+      color: white;
+      padding: 15px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #6d28d9;
+      transform: translateY(-3px);
+    }
+
+    .visual {
+      width: 42%;
+      min-width: 260px;
+      aspect-ratio: 1;
+      border-radius: 35px;
+      background:
+        radial-gradient(circle at 30% 30%, #c4b5fd, transparent 25%),
+        radial-gradient(circle at 70% 65%, #7c3aed, transparent 35%),
+        linear-gradient(135deg, #21183a, #101024);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 80px #7c3aed30;
+    }
+
+    .symbol {
+      font-size: clamp(70px, 12vw, 150px);
+      filter: drop-shadow(0 0 25px #a78bfa);
+    }
+
+    .features {
+      padding: 35px 8% 70px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #131321;
+      border: 1px solid #29253e;
+      padding: 28px;
+      border-radius: 18px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      border-color: #8b5cf6;
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin: 15px 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #25213b;
+      color: #888;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      nav a {
+        margin: 0 6px;
+        font-size: 14px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .visual {
+        width: 100%;
+        max-width: 350px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">STIKO.</div>
+
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#features">خدماتنا</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+
+      <div class="content">
+        <span class="tag">✦ مرحباً بك في عالم الإبداع</span>
+
+        <h1>
+          أفكارك تستحق<br>
+          <span>تصميماً استثنائياً</span>
+        </h1>
+
+        <p>
+          اكتشف عالماً جديداً من الإبداع والتكنولوجيا.
+          حوّل أفكارك إلى مشاريع رقمية جميلة ومميزة.
+        </p>
+
+        <a href="#features" class="btn">
+          اكتشف المزيد ←
+        </a>
+      </div>
+
+      <div class="visual">
+        <div class="symbol">✦</div>
+      </div>
+
+    </section>
+
+    <section class="features" id="features">
+
+      <div class="card">
+        <div>🎨</div>
+        <h3>تصميم إبداعي</h3>
+        <p>تصاميم عصرية بألوان متناسقة وتجربة استخدام جميلة.</p>
+      </div>
+
+      <div class="card">
+        <div>💻</div>
+        <h3>تكنولوجيا حديثة</h3>
+        <p>موقع متجاوب يعمل على الكمبيوتر والهاتف.</p>
+      </div>
+
+      <div class="card">
+        <div>🚀</div>
+        <h3>أفكار جديدة</h3>
+        <p>ابدأ مشروعك الرقمي واجعل فكرتك حقيقة.</p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer id="contact">
+    © 2026 STIKO — جميع الحقوق محفوظة
+  </footer>
+
+</body>
+</html>
